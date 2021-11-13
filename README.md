@@ -6,7 +6,7 @@ This plugin allows you to rearrange, hide, and add items in the Home Assistant s
 
 Before                     |           After
 :-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/dvd-dev/README_images/master/sidebar-before-example.png)  |  ![](https://raw.githubusercontent.com/dvd-dev/README_images/master/sidebar-example.png)
+![](https://raw.githubusercontent.com/Villhelm/README_images/master/sidebar-before-example.png)  |  ![](https://raw.githubusercontent.com/Villhelm/README_images/master/sidebar-example.png)
 
 
 ## Fork justification
