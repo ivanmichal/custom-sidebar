@@ -6,7 +6,15 @@ This plugin allows you to rearrange, hide, and add items in the Home Assistant s
 
 Before                     |           After
 :-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/Villhellm/README_images/master/sidebar-before-example.png)  |  ![](https://raw.githubusercontent.com/Villhellm/README_images/master/sidebar-example.png)
+![](https://raw.githubusercontent.com/dvd-dev/README_images/master/sidebar-before-example.png)  |  ![](https://raw.githubusercontent.com/dvd-dev/README_images/master/sidebar-example.png)
+
+
+## Fork justification
+
+Unfortunately, [Villhellm](https://github.com/Villhellm) has [passed away](https://www.gofundme.com/f/home-assistant-community-remembers-villhellm). I wish to offer my respects and sincere
+condolences to the family and friends. 
+
+This sad event has left this precious plugin orphaned with a [blocking issue](https://github.com/Villhellm/custom-sidebar/issues/40).
 
 ## HACS Installation and Configuration
 
