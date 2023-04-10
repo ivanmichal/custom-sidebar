@@ -148,7 +148,7 @@ function getSidebar() {
   root = root && root.shadowRoot;
   root = root && root.querySelector("home-assistant-main");
   root = root && root.shadowRoot;
-  root = root && root.querySelector("app-drawer-layout app-drawer");
+  root = root && root.querySelector("ha-drawer");
   root = root && root.querySelector("ha-sidebar");
   root = root && root.shadowRoot;
   TitleElement = root && root.querySelector('.title') ? root.querySelector('.title') : null ;
