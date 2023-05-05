@@ -130,6 +130,7 @@ order:
 | href | string | **Optional** | Define the href for the sidebar link.
 | icon | string | **Optional** | Set the icon of the sidebar item.
 | new_item | boolean | **Optional** | Set to true to create a new link in the sidebar. Using this option now makes `item`, `href`, and `icon` required.
+| open_new | boolean | **Optional** | Set to true to open link in a new window.
 
 ## Exceptions
 Exceptions can be used if you would like to define an order for a specific user/device.
