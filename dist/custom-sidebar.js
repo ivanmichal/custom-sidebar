@@ -148,7 +148,7 @@ function getSidebar() {
   root = root && root.shadowRoot;
   root = root && root.querySelector("home-assistant-main");
   root = root && root.shadowRoot;
-  root = root && root.querySelector("app-drawer-layout app-drawer");
+  root = root && root.querySelector("ha-drawer");
   root = root && root.querySelector("ha-sidebar");
   root = root && root.shadowRoot;
   TitleElement = root && root.querySelector('.title') ? root.querySelector('.title') : null ;
@@ -159,9 +159,12 @@ function getSidebar() {
 function createItem(elements, item) {
   var cln = getConfigurationElement(elements).cloneNode(true);
   if (cln) {
-    cln.querySelector("paper-icon-item").querySelector("ha-icon").setAttribute("icon", item.icon);
+    cln.querySelector("paper-icon-item").querySelector("ha-svg-icon").setAttribute("icon", item.icon);
     cln.querySelector("paper-icon-item").querySelector("span").innerHTML = item.item;
     cln.href = item.href;
+    if (item.open_new == true) {
+      cln.setAttribute("target", "_blank");
+    }
     cln.setAttribute("data-panel", item.item);
     elements.insertBefore(cln, elements.children[0]);
   }
@@ -192,6 +195,10 @@ function moveItem(elements, config_entry) {
       if (match) {
         if (config_entry.href) {
           elements.children[i].href = config_entry.href;
+        }
+        
+        if (config_entry.open_new) {
+          elements.children[i].setAttribute("target", "_blank");
         }
 
         if (config_entry.name) {

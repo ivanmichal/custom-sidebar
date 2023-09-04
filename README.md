@@ -4,9 +4,27 @@ This is an extra module for [Home Assistant Frontend](https://www.home-assistant
 
 This plugin allows you to rearrange, hide, and add items in the Home Assistant sidebar. (Overview, Map, History, etc)
 
+## Screenshots
+
+### [1] Collapsed Sidebar
+
 Before                     |           After
 :-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/Villhellm/README_images/master/sidebar-before-example.png)  |  ![](https://raw.githubusercontent.com/Villhellm/README_images/master/sidebar-example.png)
+![](https://raw.githubusercontent.com/blizzrdof77/custom-sidebar/master/.github/images/sidebar-before-example.png)  |  ![](https://raw.githubusercontent.com/blizzrdof77/custom-sidebar/master/.github/images/sidebar-example.png)
+
+### [2] Expanded Sidebar
+
+Before                     |           After
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/blizzrdof77/custom-sidebar/master/.github/images/sidebar-before-example-expanded.png)  |  ![](https://raw.githubusercontent.com/blizzrdof77/custom-sidebar/master/.github/images/sidebar-after-example-expanded.png)
+
+
+## Fork justification
+
+Unfortunately, [Villhellm](https://github.com/Villhellm) has [passed away](https://www.gofundme.com/f/home-assistant-community-remembers-villhellm). I wish to offer my respects and sincere
+condolences to the family and friends.
+
+This sad event has left this precious plugin orphaned with a [blocking issue](https://github.com/Villhellm/custom-sidebar/issues/40).
 
 ## HACS Installation and Configuration
 
@@ -112,6 +130,7 @@ order:
 | href | string | **Optional** | Define the href for the sidebar link.
 | icon | string | **Optional** | Set the icon of the sidebar item.
 | new_item | boolean | **Optional** | Set to true to create a new link in the sidebar. Using this option now makes `item`, `href`, and `icon` required.
+| open_new | boolean | **Optional** | Set to true to open link in a new window.
 
 ## Exceptions
 Exceptions can be used if you would like to define an order for a specific user/device.
@@ -123,7 +142,7 @@ Exceptions can be used if you would like to define an order for a specific user/
 | device | string, list | **Optional** | Type of device you would like to display this order for. ex: ipad, iphone, macintosh, windows, android
 | not_user | string, list | **Optional** | Every Home Assistant user name *except* this user name.
 | not_device | string, list | **Optional** | Every device *except* this device. ex: ipad, iphone, macintosh, windows, android
-| order | [order](#order) | **Required** | Define and order. 
+| order | [order](#order) | **Required** | Define and order.
 
 
 Ex sidebar-order.yaml using exceptions:
